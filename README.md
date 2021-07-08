@@ -11,7 +11,7 @@ Of which, I couldn't get with NGROK(free) neither LocalTunnel(Providing a subdom
 
 It supports both HTTP and WebSocket transports.
 
-**TL;DR; If you need to expose a server, for free, you can use this project and a free hosting (like heroku) to do it.**
+**TL;DR; If you need to expose a server, for free with a fixed url, you can use this project and a free hosting (like heroku) to do it.**
 
 ## How it works?
 
