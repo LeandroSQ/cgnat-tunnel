@@ -13,7 +13,26 @@ It supports both HTTP and WebSocket transports.
 
 **TL;DR; If you need to expose a server, for free, you can use this project and a free hosting (like heroku) to do it.**
 
+## How it works?
+
+The server acts as a normal HTTP/WS server, receiving requests.
+
+The client connects with the server at `REMOTE_HOST` address.
+
+Every HTTP request coming to the server will be forwarded to the connected client.
+
+Every WS connection coming to the server will be forwarded to the connected client, and it's events as well (Messages, Connect, Disconnect).
+
+All the requests forwarded to the client will be made at the client-level towards the `LOCAL_HOST` address, and their responses will be forwarded to the server.
+
+![Piranha](how-it-works.png)
+
 ## Server
+
+The source-code of the server, responsible for routing the requests incoming from the internet to the connected clients.
+
+### Running
+
 To run the server simply execute the 'main.js' file
 
 ```sh
@@ -35,12 +54,22 @@ Therefore you can use a `.env` file at the project root `/server/.env` or define
 
 
 ## Client
+
+The source-code of the client, responsible for routing the requests incoming from the server.
+
+### Running
+
 To run the server simply execute the 'main.js' file
 
 ```sh
 cd client
 node "./src/main.js"
 ```
+
+### Configuration
+
+These properties bellow are fetched from Environment variables,
+Therefore you can use a `.env` file at the project root `/server/.env` or define them into the system.
 
 |Option|Type|Default|Description|
 |--|--|--|--|
