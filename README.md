@@ -69,7 +69,7 @@ node "./src/main.js"
 ### Configuration
 
 These properties bellow are fetched from Environment variables,
-Therefore you can use a `.env` file at the project root `/server/.env` or define them into the system.
+Therefore you can use a `.env` file at the project root `/client/.env` or define them into the system.
 
 |Option|Type|Default|Description|
 |--|--|--|--|
