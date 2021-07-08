@@ -86,3 +86,4 @@ Therefore you can use a `.env` file at the project root `/client/.env` or define
 - [ ] Add CLI arguments
 - [ ] Add single index.js file for both Client and Server
 - [ ] Setup tutorial
+- [ ] Add default settings on the client to point at the localhost
