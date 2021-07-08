@@ -23,7 +23,9 @@ Every HTTP request coming to the server will be forwarded to the connected clien
 
 Every WS connection coming to the server will be forwarded to the connected client, and it's events as well (Messages, Connect, Disconnect).
 
-All the requests forwarded to the client will be made at the client-level towards the `LOCAL_HOST` address, and their responses will be forwarded to the server.
+All the requests forwarded to the client will be made at the client-level towards the `LOCAL_HOST` address, and their responses will feed the server.
+
+All the events/messages/requests made by the client, will be served as response from the server to their respective requests.
 
 ![Piranha](how-it-works.png)
 
