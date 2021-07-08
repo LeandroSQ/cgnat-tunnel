@@ -7,7 +7,7 @@ Easy and open-source solution for exposing a computer into the internet
 
 ## Why?
 I made the project for a personal reason, I needed to expose a HomeAssistant server running on a Raspberry Pi. But due to restraints with Alexa and AWS Lambda, it needed to be a constant non-changing address/subdomain.
-Of which, I couldn't get with NGROK(free) neither LocalTunnel(Providing a subdomain only worked for some hours).
+Of which, I couldn't get with [NGROK](https://ngrok.com/)(free) neither [LocalTunnel](https://github.com/localtunnel/localtunnel)(Providing a subdomain only worked for some hours).
 
 It supports both HTTP and WebSocket transports.
 
