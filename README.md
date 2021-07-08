@@ -61,7 +61,7 @@ The source-code of the client, responsible for routing the requests incoming fro
 
 ### Running
 
-To run the server simply execute the 'main.js' file
+To run the client simply execute the 'main.js' file
 
 ```sh
 cd client
@@ -77,8 +77,8 @@ Therefore you can use a `.env` file at the project root `/client/.env` or define
 |--|--|--|--|
 |SECRET|String|*Required*|Specifies a secret path to share with the server|
 |HOST|String|*Required*|The ip/hostname of the server in the internet|
-|LOCALHOST|String|*Required*|The ip/hostname to route all the incoming requests from the server. |
-|DEBUG|Boolean|false|Enables verbose logging. *AKA the localhost:PORT*|
+|LOCALHOST|String|*Required*|The ip/hostname to route all the incoming requests from the server.  *AKA the localhost:PORT*|
+|DEBUG|Boolean|false|Enables verbose logging.|
 |REMOTE_PROTOCOL|*http* or *https*|http|Specifies the protocol to establish connection with the server|
 |LOCAL_PROTOCOL|*http* or *https*|http|Specifies the protocol to establish connection with the local server|
 
