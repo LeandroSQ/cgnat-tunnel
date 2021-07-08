@@ -79,3 +79,8 @@ Therefore you can use a `.env` file at the project root `/client/.env` or define
 |DEBUG|Boolean|false|Enables verbose logging. *AKA the localhost:PORT*|
 |REMOTE_PROTOCOL|*http* or *https*|http|Specifies the protocol to establish connection with the server|
 |LOCAL_PROTOCOL|*http* or *https*|http|Specifies the protocol to establish connection with the local server|
+
+# TODO
+- [ ] Add CLI arguments
+- [ ] Add single index.js file for both Client and Server
+- [ ] Setup tutorial
